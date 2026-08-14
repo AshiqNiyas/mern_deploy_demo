@@ -13,7 +13,9 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin:"https://mern-deploy-demo-d0eivz5bz-ashiq-niyas-projects.vercel.app"
+}));
 
 app.use(express.json());
 
